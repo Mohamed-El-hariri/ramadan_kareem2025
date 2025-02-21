@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القرآن الكريم</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>القرآن الكريم</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">العودة للرئيسية</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="surah-list" id="surahList">
+            <!-- سيتم ملئها بالسور عبر JavaScript -->
+        </section>
+
+        <section class="surah-details" id="surahDetails" style="display: none;">
+            <button onclick="goBack()">العودة لقائمة السور</button>
+            <div id="versesContainer"></div>
+              <!--سيتم ملئها بالتفسير  -->
+            <div id="tafsirContainer"></div>
+        </section>
+    </main>
+    <script src="tafsir.js"></script>
+</body>
+</html>

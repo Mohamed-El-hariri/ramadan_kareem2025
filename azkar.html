@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأذكار</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>الأذكار اليومية</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="quran.html">القرآن الكريم</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="azkar-categories" id="categories">
+            <!-- سيتم ملؤها بالتصنيفات تلقائيا -->
+        </section>
+
+        <section class="zikr-container" id="zikrContainer" style="display: none;">
+            <button onclick="goBack()">العودة للتصنيفات</button>
+            <div class="zikr-header">
+                <h2 id="zikrTitle"></h2>
+                <div class="counter">
+                    <span id="currentCount">0</span>
+                    <div class="counter-controls">
+                        <button onclick="incrementCounter()">+</button>
+                        <button onclick="resetCounter()">↺</button>
+                    </div>
+                </div>
+            </div>
+            <div id="zikrContent"></div>
+            <div class="navigation-buttons">
+                <button onclick="prevZikr()">السابق</button>
+                <button onclick="nextZikr()">التالي</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="azkar.js"></script>
+</body>
+</html>
